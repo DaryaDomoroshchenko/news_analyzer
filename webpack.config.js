@@ -70,19 +70,19 @@ module.exports = {
       canPrint: true
     }),
     new HtmlWebpackPlugin({
-      inject: false,
+      inject: true,
       template: './src/pages/index/index.html',
       chunks: ['index'],
       filename: 'index.html'
     }),
     new HtmlWebpackPlugin({
-      inject: false,
+      inject: true,
       template: './src/pages/about/about.html',
       chunks: ['about'],
       filename: 'about.html'
     }),
     new HtmlWebpackPlugin({
-      inject: false,
+      inject: true,
       template: './src/pages/analytics/analytics.html',
       chunks: ['analytics'],
       filename: 'analytics.html'

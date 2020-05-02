@@ -1,0 +1,27 @@
+.search__content {
+  color: #FFF;
+/*   min-height: 496px; */
+/*   padding: 80px 416px; */
+  /* padding: 80px 0; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (min-width: 1440px) {
+  .search__content {
+    padding: 80px 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .search__content {
+    padding: 40px 0 48px 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .search__content {
+    padding: 30px 0 32px 0;
+  }
+}

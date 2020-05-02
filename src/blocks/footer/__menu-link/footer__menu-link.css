@@ -1,0 +1,20 @@
+.footer__menu-link {
+  color: #1A1B22;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  /* line-height: 24px; */
+}
+
+@media screen and (min-width: 768px) {
+  .footer__menu-link {
+    line-height: 24px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer__menu-link {
+    line-height: 48px;
+  }
+}

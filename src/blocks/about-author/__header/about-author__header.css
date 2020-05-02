@@ -1,0 +1,36 @@
+.about-author__header {
+  font-family: 'Roboto Slab', Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+/*   font-size: 40px;
+  line-height: 46px; */
+ /*  margin-top: 51px;
+  margin-bottom: 24px; */
+}
+
+@media screen and (min-width: 1440px) {
+  .about-author__header {
+    font-size: 40px;
+    line-height: 46px;
+    margin-top: 51px;
+    margin-bottom: 24px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .about-author__header {
+    font-size: 30px;
+    line-height: 40px;
+    margin-top: 0;
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .about-author__header {
+    font-size: 30px;
+    line-height: 40px;
+    margin-top: 24px;
+    margin-bottom: 16px;
+  }
+}
