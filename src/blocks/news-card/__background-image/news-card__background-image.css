@@ -1,0 +1,31 @@
+@import url(./_card-1/news-card__background-image_card-1.css);
+@import url(./_card-2/news-card__background-image_card-2.css);
+@import url(./_card-3/news-card__background-image_card-3.css);
+@import url(./_card-4/news-card__background-image_card-4.css);
+@import url(./_card-5/news-card__background-image_card-5.css);
+@import url(./_card-6/news-card__background-image_card-6.css);
+
+.news-card__background-image {
+  background-size: cover;
+/*   background-position: center; */
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+@media screen and (min-width: 1440px) {
+  .news-card__background-image {
+    height: 272px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .news-card__background-image {
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .news-card__background-image {
+    height: 196px;
+  }
+}

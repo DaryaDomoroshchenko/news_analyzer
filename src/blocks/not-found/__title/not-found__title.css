@@ -1,0 +1,30 @@
+.not-found__title {
+  font-family: 'Roboto Slab', Arial, sans-serif;
+  color: #1A1B22;
+  font-style: normal;
+  font-weight: normal;
+/*   font-size: 26px;
+  line-height: 30px; */
+  margin: 24px 0 16px 0;
+}
+
+@media screen and (min-width: 1440px) {
+  .not-found__title {
+    font-size: 26px;
+    line-height: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .not-found__title {
+    font-size: 23px;
+    line-height: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .not-found__title {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}

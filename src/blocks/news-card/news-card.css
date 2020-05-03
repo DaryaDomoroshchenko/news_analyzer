@@ -1,0 +1,35 @@
+@import url(./__background-image/news-card__background-image.css);
+@import url(./__card-content/news-card__card-content.css);
+@import url(./__date/news-card__date.css);
+@import url(./__title/news-card__title.css);
+@import url(./__text/news-card__text.css);
+@import url(./__source/news-card__source.css);
+
+.news-card {
+  background: #FFF;
+  border-radius: 8px;
+  /* width: 400px;
+  min-height: 576px; */
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1440px) {
+  .news-card {
+    min-width: 400px;
+    min-height: 576px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .news-card {
+    width: 224px;
+    min-height: 420px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .news-card {
+    width: 288px;
+    min-height: 446px;
+  }
+}

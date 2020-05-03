@@ -1,0 +1,31 @@
+.not-found__caption {
+  color: #B6BCBF;
+  font-style: normal;
+  font-weight: normal;
+/*   font-size: 18px;
+  line-height: 24px; */
+  text-align: center;
+  margin: 0;
+  max-width: 320px;
+}
+
+@media screen and (min-width: 1440px) {
+  .not-found__caption {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .not-found__caption {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .not-found__caption {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}

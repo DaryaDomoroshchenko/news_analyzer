@@ -1,0 +1,25 @@
+/* .not-found__loup-image {
+  width: 96px;
+  height: 96px;
+} */
+
+@media screen and (min-width: 1440px) {
+  .not-found__loup-image {
+    width: 96px;
+    height: 96px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .not-found__loup-image {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .not-found__loup-image {
+    width: 68px;
+    height: 68px;
+  }
+}

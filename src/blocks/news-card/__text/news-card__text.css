@@ -1,0 +1,26 @@
+.news-card__text {
+  color: #1A1B22;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  margin-top: 0;
+}
+
+@media screen and (min-width: 1440px) {
+  .news-card__text {
+    margin-bottom: 18px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .news-card__text {
+    margin-bottom: 12px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .news-card__text {
+    margin-bottom: 5px;
+  }
+}
