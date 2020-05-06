@@ -1,14 +1,68 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+
+  <meta name="description" content="Дипломный проект Дарьи Доморощенко на Яндекс.Практикум">
+  <meta name="author" content="Дарья Доморощенко">
+  <meta name="keywords" content="html, css, js, git, webpack">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
   <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.analytics.css %>">
+  <title>NewsAnalyzer</title>
+
 </head>
-<body>
-  <h1>Hello</h1>
-  <p><a href="./index.html">Index</a></p>
+
+<body class="root">
+
+  <header class="header">
+    <p class="header__logo header__logo_black">NewsAnalyzer</p>
+    <nav class="header__menu">
+      <a class="header__link header__link_unselected-black" href="./index.html">Главная</a>
+      <a class="header__link header__link_unselected-black" href="./about.html">О проекте</a>
+    </nav>
+  </header>
+
+  <section class="statistics root__paddings">
+
+    <p class="statistics__path">
+      <a class="statistics__link" href="./index.html">Главная</a> / Аналитика
+    </p>
+    <h2 class="statistics__title">Вы спросили: «Путешествия»</h2>
+    <p class="statistics__numbers">Новостей за неделю: <span class="statistics__bold">34 324</span></p>
+    <p class="statistics__numbers">Упоминаний в загаловках: <span class="statistics__bold">235</span></p>
+
+  </section>
+
+  <section class="diagram root__paddings">
+
+    <h3 class="diagram__title">Аналитика по дням</h3>
+
+
+
+  </section>
+
+  <footer class="footer">
+
+    <ul class="footer__menu">
+      <li class="footer__li"><a class="footer__menu-link" href="./index.html">Главная</a></li>
+      <li class="footer__li"><a class="footer__menu-link" href="./about.html">О проекте</a></li>
+      <li class="footer__li"><a class="footer__menu-link" href="./analytics.html">Яндекс.Практикум</a></li>
+    </ul>
+
+  <div class="footer__icons-container">
+    <a class="footer__icon-link" href="https://github.com/DaryaDomoroshchenko" target="_blank">
+      <img class="footer__social-icon footer__social-icon_github" src="<%=require('../../images/github.svg').default%>" alt="GitHub">
+    </a>
+    <a class="footer__icon-link" href="https://ru-ru.facebook.com/" target="_blank">
+      <img class="footer__social-icon footer__social-icon_facebook" src="<%=require('../../images/facebook.svg').default%>" alt="Facebook">
+    </a>
+  </div>
+
+  <p class="footer__copyright">&copy; 2020  Дарья Доморощенко</p>
+
+  </footer>
+
   <script src="<%= htmlWebpackPlugin.files.chunks.analytics.entry %>"></script>
+
 </body>
 </html>

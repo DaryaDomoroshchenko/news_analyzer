@@ -1,5 +1,7 @@
-@import url(./_selected/header__link_selected.css);
-@import url(./_unselected/header__link_unselected.css);
+@import url(./_selected-white/header__link_selected-white.css);
+@import url(./_selected-black/header__link_selected-black.css);
+@import url(./_unselected-white/header__link_unselected-white.css);
+@import url(./_unselected-black/header__link_unselected-black.css);
 
 .header__link {
   font-style: normal;
@@ -13,10 +15,6 @@
 
 .header__link:last-of-type {
   margin-right: 0;
-}
-
-.header__link:hover {
-  color: #FFF;
 }
 
 @media screen and (min-width: 1440px) {

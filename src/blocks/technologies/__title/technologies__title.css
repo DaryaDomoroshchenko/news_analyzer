@@ -1,0 +1,32 @@
+.technologies__title {
+  font-family: 'Roboto Slab', Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  max-width: 344px;
+}
+
+@media screen and (min-width: 1440px) {
+  .technologies__title {
+    font-size: 40px;
+    line-height: 46px;
+    margin: 0 174px 0 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .technologies__title {
+    font-size: 30px;
+    line-height: 40px;
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .technologies__title {
+    font-size: 30px;
+    line-height: 40px;
+    margin-top: 24px;
+    margin-bottom: 39px;
+  }
+}

@@ -1,0 +1,30 @@
+.for-clients__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.for-clients__text:last-of-type {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 1440px) {
+  .for-clients__text {
+    max-width: 815px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .for-clients__text {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .for-clients__text {
+    width: 100%;
+  }
+}

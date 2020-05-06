@@ -17,10 +17,10 @@
   <section class="search">
 
     <header class="header">
-      <p class="header__logo">NewsAnalyzer</p>
+      <p class="header__logo header__logo_white">NewsAnalyzer</p>
       <nav class="header__menu">
-        <a class="header__link header__link_selected" href="./index.html">Главная</a>
-        <a class="header__link header__link_unselected" href="./about.html">О проекте</a>
+        <a class="header__link header__link_selected-white" href="./index.html">Главная</a>
+        <a class="header__link header__link_unselected-white" href="./about.html">О проекте</a>
       </nav>
     </header>
 
@@ -37,22 +37,22 @@
 
   </section>
 
-  <section class="preloader">
+<!--   <section class="preloader">
 
     <i class="preloader__circle"></i>
     <p class="preloader__caption">Идет поиск новостей...</p>
 
-  </section>
+  </section> -->
 
-  <section class="not-found">
+<!--   <section class="not-found">
 
     <img class="not-found__loup-image" src="<%=require('../../images/not-found.png').default%>" alt="Ничего не найдено">
     <h3 class="not-found__title">Ничего не&nbsp;найдено</h3>
     <p class="not-found__caption">К&nbsp;сожалению по&nbsp;вашему запросу ничего не&nbsp;найдено.</p>
 
-  </section>
+  </section> -->
 
-  <!-- <section class="results root__paddings">
+  <section class="results root__paddings">
 
     <div class="results__container">
       <h2 class="results__title">Результаты поиска</h2>
@@ -66,9 +66,11 @@
       <div class="news-card">
         <div class="news-card__background-image news-card__background-image_card-1"></div>
         <div class="news-card__card-content">
-          <p class="news-card__date">2&nbsp;августа, 2019</p>
-          <h3 class="news-card__title">Национальное достояние&nbsp;&mdash; парки</h3>
-          <p class="news-card__text">В&nbsp;2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков&nbsp;&mdash; охраняемых территорий, где и&nbsp;сегодня каждый может приобщиться к&nbsp;природе.</p>
+          <div class="news-card__wrap">
+            <p class="news-card__date">2&nbsp;августа, 2019</p>
+            <h3 class="news-card__title">Национальное достояние &mdash; парки</h3>
+            <p class="news-card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складыв...</p>
+          </div>
           <p class="news-card__source">Лента.ру</p>
         </div>
       </div>
@@ -76,9 +78,11 @@
       <div class="news-card">
         <div class="news-card__background-image news-card__background-image_card-2" style="background-image: url('../../images/card_2.jpg')"></div>
         <div class="news-card__card-content">
-          <p class="news-card__date">2&nbsp;августа, 2019</p>
-          <h3 class="news-card__title">Лесные огоньки: история одной фотографии</h3>
-          <p class="news-card__text">Фотограф отвлеклась от&nbsp;освещения суровой политической реальности Мексики, чтобы запечатлеть ускользающую красоту одного из&nbsp;местных чудес природы.</p>
+          <div class="news-card__wrap">
+            <p class="news-card__date">2&nbsp;августа, 2019</p>
+            <h3 class="news-card__title">Лесные огоньки: история одной фотографии</h3>
+            <p class="news-card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складыв...</p>
+          </div>
           <p class="news-card__source">Медуза</p>
         </div>
       </div>
@@ -86,9 +90,11 @@
       <div class="news-card">
         <div class="news-card__background-image news-card__background-image_card-3" style="background-image: url('../../images/card_3.jpg')"></div>
         <div class="news-card__card-content">
-          <p class="news-card__date">2&nbsp;августа, 2019</p>
-          <h3 class="news-card__title">&laquo;Первозданная тайга&raquo;: новый фотопроект Игоря Шпиленка</h3>
-          <p class="news-card__text">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о&nbsp;необходимости их&nbsp;сохранения. В&nbsp;этот раз он&nbsp;отправился в&nbsp;Двинско-Пинежскую тайгу, где...</p>
+          <div class="news-card__wrap">
+            <p class="news-card__date">2&nbsp;августа, 2019</p>
+            <h3 class="news-card__title">Национальное достояние&nbsp;&mdash; парки</h3>
+            <p class="news-card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складыв...</p>
+          </div>
           <p class="news-card__source">Риа</p>
         </div>
       </div>
@@ -96,9 +102,11 @@
       <div class="news-card">
         <div class="news-card__background-image news-card__background-image_card-4" style="background-image: url('../../images/card_4.jpg')"></div>
         <div class="news-card__card-content">
-          <p class="news-card__date">2&nbsp;августа, 2019</p>
-          <h3 class="news-card__title">Национальное достояние&nbsp;&mdash; парки</h3>
-          <p class="news-card__text">В&nbsp;2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков&nbsp;&mdash; охраняемых территорий, где и&nbsp;сегодня каждый может приобщиться к&nbsp;природе.</p>
+          <div class="news-card__wrap">
+            <p class="news-card__date">2&nbsp;августа, 2019</p>
+            <h3 class="news-card__title">Национальное достояние&nbsp;&mdash; парки</h3>
+            <p class="news-card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складыв...</p>
+          </div>
           <p class="news-card__source">Дзен</p>
         </div>
       </div>
@@ -106,9 +114,11 @@
       <div class="news-card">
         <div class="news-card__background-image news-card__background-image_card-5" style="background-image: url('../../images/card_5.jpg')"></div>
         <div class="news-card__card-content">
-          <p class="news-card__date">2&nbsp;августа, 2019</p>
-          <h3 class="news-card__title">Лесные огоньки: история одной фотографии</h3>
-          <p class="news-card__text">Фотограф отвлеклась от&nbsp;освещения суровой политической реальности Мексики, чтобы запечатлеть ускользающую красоту одного из&nbsp;местных чудес природы.</p>
+          <div class="news-card__wrap">
+            <p class="news-card__date">2&nbsp;августа, 2019</p>
+            <h3 class="news-card__title">Лесные огоньки: история одной фотографии</h3>
+            <p class="news-card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складыв...</p>
+          </div>
           <p class="news-card__source">Афиша</p>
         </div>
       </div>
@@ -116,9 +126,11 @@
       <div class="news-card">
         <div class="news-card__background-image news-card__background-image_card-6" style="background-image: url('../../images/card_6.jpg')"></div>
         <div class="news-card__card-content">
-          <p class="news-card__date">2&nbsp;августа, 2019</p>
-          <h3 class="news-card__title">&laquo;Первозданная тайга&raquo;: новый фотопроект Игоря Шпиленка</h3>
-          <p class="news-card__text">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о&nbsp;необходимости их&nbsp;сохранения. В&nbsp;этот раз он&nbsp;отправился в&nbsp;Двинско-Пинежскую тайгу, где...</p>
+          <div class="news-card__wrap">
+            <p class="news-card__date">2&nbsp;августа, 2019</p>
+            <h3 class="news-card__title">Национальное достояние&nbsp;&mdash; парки</h3>
+            <p class="news-card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складыв...</p>
+          </div>
           <p class="news-card__source">Медиазона</p>
         </div>
       </div>
@@ -127,7 +139,7 @@
 
     <button class="results__button">Показать еще</button>
 
-  </section> -->
+  </section>
 
   <section class="about-author root__paddings">
     <div class="about-author__image-wrap">

@@ -5,9 +5,13 @@
 @import url(../../blocks/footer/footer.css);
 @import url(../../blocks/preloader/preloader.css);
 @import url(../../blocks/not-found/not-found.css);
-@import url(./__paddings/root__paddings.css);
 @import url(../../blocks/cards-list/cards-list.css);
 @import url(../../blocks/news-card/news-card.css);
+@import url(../../blocks/for-clients/for-clients.css);
+@import url(../../blocks/technologies/technologies.css);
+@import url(../../blocks/statistics/statistics.css);
+@import url(../../blocks/diagram/diagram.css);
+@import url(./__paddings/root__paddings.css);
 
 .root {
   font-family: 'Roboto', Arial, sans-serif;

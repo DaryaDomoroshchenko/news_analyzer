@@ -1,8 +1,49 @@
-/* .news-card__card-content {
+.news-card__card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
 
+/*********************/
+@media screen and (min-width: 1440px) {
+  .news-card__card-content {
+    min-height: 304px;
+    padding: 20px 24px 24px;
+  }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1439px) {
+  .news-card__card-content {
+    min-height: 302px;
+    padding: 16px;
+  }
+}
+
+/* @media screen and (min-width: 1000px) and (max-width: 1279px) {
+  .news-card__card-content {
+    min-height: 272px;
+    padding: 16px;
+  }
 } */
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .news-card__card-content {
+    min-height: 270px;
+    padding: 16px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .news-card__card-content {
+    min-height: 250px;
+    padding: 15px 16px 20px;
+  }
+}
+
+/*********************/
+
+/* @media screen and (min-width: 1440px) {
   .news-card__card-content {
     padding: 20px 24px 24px;
   }
@@ -18,4 +59,4 @@
   .news-card__card-content {
     padding: 15px 16px 20px;
   }
-}
+} */
