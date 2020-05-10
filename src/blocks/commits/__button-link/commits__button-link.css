@@ -1,0 +1,22 @@
+.commits__button-link {
+  color: #1A1B22;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  text-decoration: none;
+  border-radius: 80px;
+  border: 1px solid #1A1B22;
+  box-sizing: border-box;
+  display: block;
+  margin: 24px auto 0 auto;
+  width: 288px;
+  height: 56px;
+  padding: 15px 68px;
+}
+
+@media screen and (min-width: 768px) {
+  .commits__button-link {
+    display: none;
+  }
+}

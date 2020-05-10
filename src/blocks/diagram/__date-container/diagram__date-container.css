@@ -1,0 +1,21 @@
+.diagram__date-container {
+  max-width: 76px;
+}
+
+@media screen and (min-width: 1440px) {
+  .diagram__date-container {
+    margin-right: 48px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .diagram__date-container {
+    margin-right: 61px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .diagram__date-container {
+    margin-right: 24px;
+  }
+}

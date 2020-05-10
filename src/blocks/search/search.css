@@ -7,7 +7,7 @@
 @import url(./__button/search__button.css);
 
 .search {
-/*   background-image: url(../../images/search_background.jpg); */
+  font-family: 'Roboto', Arial, sans-serif;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;

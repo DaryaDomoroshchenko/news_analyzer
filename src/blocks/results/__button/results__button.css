@@ -1,8 +1,6 @@
 .results__button {
-  background: #FFF;
+  background-color: #FFF;
   border-radius: 80px;
-/*   width: 288px;
-  height: 64px; */
   border: none;
   font-style: normal;
   font-weight: 500;
@@ -11,11 +9,12 @@
   color: #1A1B22;
   padding: 0;
   display: block;
-  /* margin: 64px auto 0 auto; */
+  cursor: pointer;
 }
 
 .results__button:hover {
-  opacity: 0.9;
+  opacity: .9;
+  transition: opacity .4s ease-out;
 }
 
 @media screen and (min-width: 1440px) {

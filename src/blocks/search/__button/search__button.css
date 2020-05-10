@@ -1,6 +1,6 @@
 .search__button {
   color: #FFF;
-  background: #2F71E5;
+  background-color: #2F71E5;
   border: none;
   font-style: normal;
   font-weight: 500;
@@ -8,18 +8,17 @@
   line-height: 24px;
   border-radius: 100px;
   padding: 0;
-/*   width: 168px;
-  height: 64px; */
- /*  position: absolute;
-  left: 440px; */
+  cursor: pointer;
 }
 
 .search__button:hover {
-  background: #347EFF;
+  background-color: #347EFF;
+  transition: background-color .4s ease-out;
 }
 
 .search__button:active {
-  background: #2A65CC;
+  background-color: #2A65CC;
+  transition: background-color .01s ease-out;
 }
 
 @media screen and (min-width: 1440px) {

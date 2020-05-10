@@ -4,6 +4,10 @@
   font-style: normal;
   font-weight: normal;
   margin-top: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow-y: hidden;
 }
 
 @media screen and (min-width: 1440px) {

@@ -7,8 +7,9 @@
   <meta name="keywords" content="html, css, js, git, webpack">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="<%=require('../../images/favicon.ico').default%>">
   <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.analytics.css %>">
-  <title>NewsAnalyzer</title>
+  <title>NewsAnalyzer - Аналитика</title>
 
 </head>
 
@@ -37,28 +38,117 @@
 
     <h3 class="diagram__title">Аналитика по дням</h3>
 
+    <div class="diagram__info-container">
+      <div class="diagram__date-container">
+        <p class="diagram__date">Дата</p>
+        <p class="diagram__month">(август)</p>
+      </div>
+      <p class="diagram__mentions">Кол-во упоминаний</p>
+    </div>
 
+    <div class="diagram__scale-container">
+      <p class="diagram__scale-point">0</p>
+      <p class="diagram__scale-point">25</p>
+      <p class="diagram__scale-point">50</p>
+      <p class="diagram__scale-point">75</p>
+      <p class="diagram__scale-point">100</p>
+    </div>
+
+    <div class="diagram__rows-container">
+
+      <div class="diagram__row">
+        <p class="diagram__row-day">19, пн</p>
+        <div class="diagram__rows-wrap">
+          <div class="diagram__colored-block" style="width: 15%">
+            <p class="diagram__number">15</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="diagram__row">
+        <p class="diagram__row-day">20, вт</p>
+        <div class="diagram__rows-wrap">
+          <div class="diagram__colored-block" style="width: 18%">
+            <p class="diagram__number">18</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="diagram__row">
+        <p class="diagram__row-day">21, ср</p>
+        <div class="diagram__rows-wrap">
+          <div class="diagram__colored-block" style="width: 11%">
+            <p class="diagram__number">11</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="diagram__row">
+        <p class="diagram__row-day">22, чт</p>
+        <div class="diagram__rows-wrap">
+          <div class="diagram__colored-block" style="width: 39%">
+            <p class="diagram__number">39</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="diagram__row">
+        <p class="diagram__row-day">23, пт</p>
+        <div class="diagram__rows-wrap">
+          <div class="diagram__colored-block" style="width: 45%">
+            <p class="diagram__number">45</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="diagram__row">
+        <p class="diagram__row-day">24, сб</p>
+        <div class="diagram__rows-wrap">
+          <div class="diagram__colored-block" style="width: 73%">
+            <p class="diagram__number">73</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="diagram__row">
+        <p class="diagram__row-day">25, вс</p>
+        <div class="diagram__rows-wrap">
+          <div class="diagram__colored-block" style="width: 34%">
+            <p class="diagram__number">34</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="diagram__scale-container">
+      <p class="diagram__scale-point">0</p>
+      <p class="diagram__scale-point">25</p>
+      <p class="diagram__scale-point">50</p>
+      <p class="diagram__scale-point">75</p>
+      <p class="diagram__scale-point">100</p>
+    </div>
 
   </section>
 
   <footer class="footer">
 
     <ul class="footer__menu">
-      <li class="footer__li"><a class="footer__menu-link" href="./index.html">Главная</a></li>
-      <li class="footer__li"><a class="footer__menu-link" href="./about.html">О проекте</a></li>
-      <li class="footer__li"><a class="footer__menu-link" href="./analytics.html">Яндекс.Практикум</a></li>
+      <li class="footer__li"><a class="footer__menu-link hover-opacity" href="./index.html">Главная</a></li>
+      <li class="footer__li"><a class="footer__menu-link hover-opacity" href="./about.html">О проекте</a></li>
+      <li class="footer__li"><a class="footer__menu-link hover-opacity" href="https://praktikum.yandex.ru/web/" target="_blank">Яндекс.Практикум</a></li>
     </ul>
 
-  <div class="footer__icons-container">
-    <a class="footer__icon-link" href="https://github.com/DaryaDomoroshchenko" target="_blank">
-      <img class="footer__social-icon footer__social-icon_github" src="<%=require('../../images/github.svg').default%>" alt="GitHub">
-    </a>
-    <a class="footer__icon-link" href="https://ru-ru.facebook.com/" target="_blank">
-      <img class="footer__social-icon footer__social-icon_facebook" src="<%=require('../../images/facebook.svg').default%>" alt="Facebook">
-    </a>
-  </div>
+    <div class="footer__icons-container">
+      <a class="footer__icon-link hover-opacity" href="https://github.com/DaryaDomoroshchenko" target="_blank">
+        <img class="footer__social-icon" src="<%=require('../../images/github.svg').default%>" alt="GitHub">
+      </a>
+      <a class="footer__icon-link hover-opacity" href="https://ru-ru.facebook.com/" target="_blank">
+        <img class="footer__social-icon" src="<%=require('../../images/facebook.svg').default%>" alt="Facebook">
+      </a>
+    </div>
 
-  <p class="footer__copyright">&copy; 2020  Дарья Доморощенко</p>
+    <p class="footer__copyright">&copy; 2020  Дарья Доморощенко</p>
 
   </footer>
 

@@ -1,0 +1,21 @@
+.commits__link {
+  color: #1A1B22;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .commits__link {
+    max-width: 156px;
+    text-align: end;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .commits__link {
+    display: none;
+  }
+}

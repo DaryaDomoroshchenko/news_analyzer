@@ -7,13 +7,10 @@
 @import url(./__social-icon/footer__social-icon.css);
 
 .footer {
- /*  border: 1px solid #000; */
+  font-family: 'Roboto', Arial, sans-serif;
   color: #1A1B22;
-  /* padding: 0 106px 0 104px; */
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
- /*  min-height: 80px; */
 }
 
 @media screen and (min-width: 1440px) {

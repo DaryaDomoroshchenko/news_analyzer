@@ -1,0 +1,20 @@
+.commit-card__date {
+  color: #B6BCBF;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  margin-top: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .commit-card__date {
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .commit-card__date {
+    margin-bottom: 8px;
+  }
+}

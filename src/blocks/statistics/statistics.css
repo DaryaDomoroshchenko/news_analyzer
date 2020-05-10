@@ -5,6 +5,7 @@
 @import url(./__bold/statistics__bold.css);
 
 .statistics {
+  font-family: 'Roboto', Arial, sans-serif;
   color: #1A1B22;
 }
 

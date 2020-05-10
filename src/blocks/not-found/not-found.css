@@ -3,11 +3,11 @@
 @import url(./__caption/not-found__caption.css);
 
 .not-found {
+  font-family: 'Roboto', Arial, sans-serif;
   background: #F5F6F7;
   display: flex;
   align-items: center;
   flex-direction: column;
-/*   padding: 86px 0 80px; */
 }
 
 @media screen and (min-width: 1440px) {

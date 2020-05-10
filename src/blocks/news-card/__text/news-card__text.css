@@ -6,22 +6,25 @@
   line-height: 22px;
   margin-top: 0;
   margin-bottom: 0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow-y: hidden;
 }
 
-/* @media screen and (min-width: 1440px) {
+@media screen and (min-width: 1440px) {
   .news-card__text {
-    margin-bottom: 18px;
+    -webkit-line-clamp: 5;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1439px) {
   .news-card__text {
-    margin-bottom: 12px;
+    -webkit-line-clamp: 4;
   }
 }
 
 @media screen and (max-width: 767px) {
   .news-card__text {
-    margin-bottom: 5px;
+    -webkit-line-clamp: 3;
   }
-} */
+}

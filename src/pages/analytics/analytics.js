@@ -1,1 +1,1 @@
-import "./analytics.css";
+import './analytics.css';

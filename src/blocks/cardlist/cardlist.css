@@ -1,0 +1,33 @@
+.cardlist {
+  display: grid;
+  justify-content: center;
+}
+
+@media screen and (min-width: 1440px) {
+  .cardlist {
+    grid-template-columns: repeat(auto-fill, 400px);
+    grid-gap: 16px 16px;
+  }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1439px) {
+  .cardlist {
+    grid-template-columns: repeat(auto-fill, 394px);
+    grid-gap: 8px 8px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .cardlist {
+    grid-template-columns: repeat(auto-fill, 224px);
+    grid-gap: 8px 8px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .cardlist {
+    grid-template-columns: repeat(auto-fill, 288px);
+    grid-gap: 8px 8px;
+  }
+}
+

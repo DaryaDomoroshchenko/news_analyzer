@@ -7,8 +7,9 @@
   <meta name="keywords" content="html, css, js, git, webpack">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="<%=require('../../images/favicon.ico').default%>">
   <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.about.css %>">
-  <title>NewsAnalyzer</title>
+  <title>NewsAnalyzer - О проекте</title>
 
 </head>
 
@@ -65,7 +66,7 @@
 
   <section class="about-author root__paddings">
     <div class="about-author__image-wrap">
-      <img class="about-author__image" src="<%=require('../../images/myphoto.jpg').default%>" alt="Author`s photo">
+      <img class="about-author__image" src="<%=require('../../images/myphoto.jpg').default%>" alt="Фото автора">
     </div>
 
     <div class="about-author__container">
@@ -75,21 +76,119 @@
     </div>
   </section>
 
+  <section class="commits">
+
+    <div class="commits__container">
+      <h2 class="commits__title">История коммитов из&nbsp;GitHub</h2>
+      <a class="commits__link hover-opacity" href="https://github.com/DaryaDomoroshchenko/diploma_news_analyzer/commits/master" target="_blank">
+        Открыть в  Github&nbsp;&nbsp;<img class="results__arrow-image" src="<%=require('../../images/arrow.png').default%>" alt="Arrow">
+      </a>
+    </div>
+
+    <div class="swiper-container">
+
+      <div class="commit-cardlist swiper-wrapper">
+
+        <div class="commit-card swiper-slide">
+          <p class="commit-card__date">14 августа, 2019</p>
+          <div class="commit-card__container">
+            <img class="commit-card__image" src="<%=require('../../images/mini_avatar.jpg').default%>" alt="Фото автора">
+            <div class="commit-card__wrap">
+              <h4 class="commit-card__name">Инга Иванова</h4>
+              <p class="commit-card__email">ingaiva@yandex.ru</p>
+            </div>
+          </div>
+          <p class="commit-card__text">Emmet (formerly Zen Coding) is a web-developer’s toolkit that can greatly improve your HTML & CSS workflow.</p>
+        </div>
+
+        <div class="commit-card swiper-slide">
+          <p class="commit-card__date">14 августа, 2019</p>
+          <div class="commit-card__container">
+            <img class="commit-card__image" src="<%=require('../../images/mini_avatar.jpg').default%>" alt="Фото автора">
+            <div class="commit-card__wrap">
+              <h4 class="commit-card__name">Инга Иванова</h4>
+              <p class="commit-card__email">ingaiva@yandex.ru</p>
+            </div>
+          </div>
+          <p class="commit-card__text">Emmet (formerly Zen Coding) is a web-developer’s toolkit that can greatly improve your HTML & CSS workflow.</p>
+        </div>
+
+        <div class="commit-card swiper-slide">
+          <p class="commit-card__date">14 августа, 2019</p>
+          <div class="commit-card__container">
+            <img class="commit-card__image" src="<%=require('../../images/mini_avatar.jpg').default%>" alt="Фото автора">
+            <div class="commit-card__wrap">
+              <h4 class="commit-card__name">Инга Иванова</h4>
+              <p class="commit-card__email">ingaiva@yandex.ru</p>
+            </div>
+          </div>
+          <p class="commit-card__text">Emmet (formerly Zen Coding) is a web-developer’s toolkit that can greatly improve your HTML & CSS workflow.</p>
+        </div>
+
+        <div class="commit-card swiper-slide">
+          <p class="commit-card__date">14 августа, 2019</p>
+          <div class="commit-card__container">
+            <img class="commit-card__image" src="<%=require('../../images/mini_avatar.jpg').default%>" alt="Фото автора">
+            <div class="commit-card__wrap">
+              <h4 class="commit-card__name">Инга Иванова</h4>
+              <p class="commit-card__email">ingaiva@yandex.ru</p>
+            </div>
+          </div>
+
+          <p class="commit-card__text">Emmet (formerly Zen Coding) is a web-developer’s toolkit that can greatly improve your HTML & CSS workflow.</p>
+        </div>
+        <div class="commit-card swiper-slide">
+          <p class="commit-card__date">14 августа, 2019</p>
+          <div class="commit-card__container">
+            <img class="commit-card__image" src="<%=require('../../images/mini_avatar.jpg').default%>" alt="Фото автора">
+            <div class="commit-card__wrap">
+              <h4 class="commit-card__name">Инга Иванова</h4>
+              <p class="commit-card__email">ingaiva@yandex.ru</p>
+            </div>
+          </div>
+
+          <p class="commit-card__text">Emmet (formerly Zen Coding) is a web-developer’s toolkit that can greatly improve your HTML & CSS workflow.</p>
+        </div>
+        <div class="commit-card swiper-slide">
+          <p class="commit-card__date">14 августа, 2019</p>
+          <div class="commit-card__container">
+            <img class="commit-card__image" src="<%=require('../../images/mini_avatar.jpg').default%>" alt="Фото автора">
+            <div class="commit-card__wrap">
+              <h4 class="commit-card__name">Инга Иванова</h4>
+              <p class="commit-card__email">ingaiva@yandex.ru</p>
+            </div>
+          </div>
+          <p class="commit-card__text">Emmet (formerly Zen Coding) is a web-developer’s toolkit that can greatly improve your HTML & CSS workflow.</p>
+        </div>
+
+      </div>
+
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+    </div>
+
+    <a class="commits__button-link" href="https://github.com/DaryaDomoroshchenko/diploma_news_analyzer/commits/master" target="_blank">
+      Открыть в GitHub
+    </a>
+
+  </section>
 
   <footer class="footer">
 
-      <ul class="footer__menu">
-        <li class="footer__li"><a class="footer__menu-link" href="./index.html">Главная</a></li>
-        <li class="footer__li"><a class="footer__menu-link" href="./about.html">О проекте</a></li>
-        <li class="footer__li"><a class="footer__menu-link" href="./analytics.html">Яндекс.Практикум</a></li>
-      </ul>
+    <ul class="footer__menu">
+      <li class="footer__li"><a class="footer__menu-link hover-opacity" href="./index.html">Главная</a></li>
+      <li class="footer__li"><a class="footer__menu-link hover-opacity" href="./about.html">О проекте</a></li>
+      <li class="footer__li"><a class="footer__menu-link hover-opacity" href="https://praktikum.yandex.ru/web/" target="_blank">Яндекс.Практикум</a></li>
+    </ul>
 
     <div class="footer__icons-container">
-      <a class="footer__icon-link" href="https://github.com/DaryaDomoroshchenko" target="_blank">
-        <img class="footer__social-icon footer__social-icon_github" src="<%=require('../../images/github.svg').default%>" alt="GitHub">
+      <a class="footer__icon-link hover-opacity" href="https://github.com/DaryaDomoroshchenko" target="_blank">
+        <img class="footer__social-icon" src="<%=require('../../images/github.svg').default%>" alt="GitHub">
       </a>
-      <a class="footer__icon-link" href="https://ru-ru.facebook.com/" target="_blank">
-        <img class="footer__social-icon footer__social-icon_facebook" src="<%=require('../../images/facebook.svg').default%>" alt="Facebook">
+      <a class="footer__icon-link hover-opacity" href="https://ru-ru.facebook.com/" target="_blank">
+        <img class="footer__social-icon" src="<%=require('../../images/facebook.svg').default%>" alt="Facebook">
       </a>
     </div>
 

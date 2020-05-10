@@ -1,0 +1,29 @@
+.diagram__scale-container {
+  color: #B6BCBF;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 1440px) {
+  .diagram__scale-container {
+    margin-left: 104px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .diagram__scale-container {
+    margin-left: 116px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .diagram__scale-container {
+    display: none;
+  }
+}

@@ -1,0 +1,23 @@
+.commit-card__name {
+  font-family: 'Roboto Slab', Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  color: #1A1B22;
+  margin-top: 0;
+}
+
+@media screen and (min-width: 1440px) {
+  .commit-card__name {
+    font-size: 26px;
+    line-height: 30px;
+    margin-bottom: 2px;
+  }
+}
+
+@media screen and (max-width: 1439px) {
+  .commit-card__name {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 0;
+  }
+}
