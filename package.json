@@ -1,8 +1,8 @@
 {
-  "name": "diploma_news_analyzer",
-  "version": "0.0.1",
+  "name": "news_analyzer",
+  "version": "0.0.5",
   "description": "Дипломный проект News Analyzer",
-  "homepage": "https://daryadomoroshchenko.github.io/diploma_news_analyzer/",
+  "homepage": "https://daryadomoroshchenko.github.io/news_analyzer/",
   "main": "./src/pages/index/index.js",
   "scripts": {
     "build": "cross-env NODE_ENV=production rimraf dist && webpack --mode production",
@@ -11,12 +11,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DaryaDomoroshchenko/diploma_news_analyzer.git"
+    "url": "git+https://github.com/DaryaDomoroshchenko/news_analyzer.git"
   },
   "author": "Darya Domoroshchenko",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/DaryaDomoroshchenko/diploma_news_analyzer/issues"
+    "url": "https://github.com/DaryaDomoroshchenko/news_analyzer/issues"
   },
   "devDependencies": {
     "@babel/cli": "7.8.4",
