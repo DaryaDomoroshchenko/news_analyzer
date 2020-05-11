@@ -1,0 +1,123 @@
+.swiper-container {
+  width: 100%;
+}
+
+@media screen and (min-width: 1440px) {
+  .swiper-container {
+    height: 344px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .swiper-container {
+    height: 282px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .swiper-container {
+    height: 288px;
+  }
+}
+
+.swiper-slide {
+  border-radius: 16px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.swiper-slide:after {
+  content: '';
+  display: block;
+  background: linear-gradient(270deg, rgba(245, 246, 247, 0) 0%, #F5F6F7 100%);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.swiper-slide-next + .swiper-slide:after {
+  content: '';
+  display: block;
+  background: linear-gradient(90deg, rgba(245, 246, 247, 0) 0%, #F5F6F7 100%);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.swiper-slide-prev:after,
+.swiper-slide-active:after,
+.swiper-slide-next:after{
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.swiper-pagination-fraction,
+.swiper-pagination-custom,
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  bottom: 0;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background: #1A1B22;
+}
+
+.swiper-button-prev {
+  background-color: #1A1B22;
+  border-radius: 20px;
+  box-shadow: 0px 3px 10px rgba(14, 26, 57, 0.2);
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 24px;
+}
+
+.swiper-button-prev::after {
+  color: #FFF;
+  transform: scale(0.34, 0.306);
+}
+
+.swiper-button-next {
+  background-color: #1A1B22;
+  border-radius: 20px;
+  box-shadow: 0px 3px 10px rgba(14, 26, 57, 0.2);
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 24px;
+}
+
+.swiper-button-next::after {
+  color: #FFF;
+  transform: scale(0.34, 0.306);
+}
+
+@media screen and (min-width: 1440px) {
+  .swiper-button-prev, .swiper-button-next {
+    top: 146px;
+  }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1439px) {
+  .swiper-button-prev, .swiper-button-next {
+    top: 121px;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .swiper-button-prev, .swiper-button-next {
+    display: none;
+  }
+}

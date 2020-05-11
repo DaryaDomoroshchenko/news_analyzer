@@ -1,0 +1,40 @@
+@import url(./__title/diagram__title.css);
+@import url(./__info-container/diagram__info-container.css);
+@import url(./__date-container/diagram__date-container.css);
+@import url(./__date/diagram__date.css);
+@import url(./__month/diagram__month.css);
+@import url(./__mentions/diagram__mentions.css);
+@import url(./__scale-container/diagram__scale-container.css);
+@import url(./__scale-point/diagram__scale-point.css);
+@import url(./__rows-container/diagram__rows-container.css);
+@import url(./__row/diagram__row.css);
+@import url(./__row-day/diagram__row-day.css);
+@import url(./__rows-wrap/diagram__rows-wrap.css);
+@import url(./__colored-block/diagram__colored-block.css);
+@import url(./__number/diagram__number.css);
+
+.diagram {
+  font-family: 'Roboto', Arial, sans-serif;
+  background: #F5F6F7;
+}
+
+@media screen and (min-width: 1440px) {
+  .diagram {
+    padding-top: 80px;
+    padding-bottom: 89px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .diagram {
+    padding-top: 40px;
+    padding-bottom: 48px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .diagram {
+    padding-top: 24px;
+    padding-bottom: 23px;
+  }
+}

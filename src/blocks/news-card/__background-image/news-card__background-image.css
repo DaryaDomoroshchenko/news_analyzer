@@ -1,0 +1,29 @@
+.news-card__background-image {
+  background-size: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+@media screen and (min-width: 1440px) {
+  .news-card__background-image {
+    height: 272px;
+  }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1439px) {
+  .news-card__background-image {
+    height: 268px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .news-card__background-image {
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .news-card__background-image {
+    height: 196px;
+  }
+}

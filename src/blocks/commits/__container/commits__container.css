@@ -1,0 +1,29 @@
+.commits__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (min-width: 1440px) {
+  .commits__container {
+    padding-left: 104px;
+    padding-right: 112px;
+    margin-bottom: 64px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .commits__container {
+    padding-left: 40px;
+    padding-right: 48px;
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .commits__container {
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-bottom: 16px;
+  }
+}

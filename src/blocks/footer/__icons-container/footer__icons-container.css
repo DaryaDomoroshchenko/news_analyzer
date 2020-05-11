@@ -1,0 +1,12 @@
+.footer__icons-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  order: 3;
+}
+
+@media screen and (max-width: 767px) {
+  .footer__icons-container {
+    margin-top: 22px;
+  }
+}

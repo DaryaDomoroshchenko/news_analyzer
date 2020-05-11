@@ -1,0 +1,10 @@
+.search__input-container {
+  position: relative;
+  width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .search__input-container {
+    flex-direction: column;
+  }
+}

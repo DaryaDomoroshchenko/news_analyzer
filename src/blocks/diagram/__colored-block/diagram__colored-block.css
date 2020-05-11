@@ -1,0 +1,6 @@
+.diagram__colored-block {
+  background: #2F71E5;
+  height: 24px;
+  display: flex;
+  align-items: center;
+}

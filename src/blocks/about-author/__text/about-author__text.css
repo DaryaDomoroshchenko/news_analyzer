@@ -1,0 +1,26 @@
+.about-author__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.about-author__text:last-of-type {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .about-author__text {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .about-author__text {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}

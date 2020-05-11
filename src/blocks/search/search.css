@@ -1,0 +1,32 @@
+@import url(./__content/search__content.css);
+@import url(./__content-container/search__content-container.css);
+@import url(./__header/search__header.css);
+@import url(./__caption/search__caption.css);
+@import url(./__input-container/search__input-container.css);
+@import url(./__input/search__input.css);
+@import url(./__button/search__button.css);
+
+.search {
+  font-family: 'Roboto', Arial, sans-serif;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+@media screen and (min-width: 1440px) {
+  .search {
+    background-image: url(../../images/search_background.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .search {
+    background-image: url(../../images/search_background_ipad_mini.jpg);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .search {
+    background-image: url(../../images/search_background_iphone_se.jpg);
+  }
+}

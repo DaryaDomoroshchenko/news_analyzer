@@ -1,0 +1,20 @@
+@media screen and (min-width: 1440px) {
+  .root__paddings {
+    padding-left: 104px;
+    padding-right: 104px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .root__paddings {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .root__paddings {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}

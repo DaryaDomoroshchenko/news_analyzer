@@ -1,0 +1,7 @@
+.header__link_unselected-black {
+  color: #B6BCBF;
+}
+
+.header__link_unselected-black:hover {
+  color: #1A1B22;
+}

@@ -1,0 +1,32 @@
+.for-clients__title {
+  font-family: 'Roboto Slab', Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+@media screen and (min-width: 1440px) {
+  .for-clients__title {
+    font-size: 40px;
+    line-height: 46px;
+    margin-top: 0;
+    margin-bottom: 24px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .for-clients__title {
+    font-size: 30px;
+    line-height: 34px;
+    margin-top: 0;
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .for-clients__title {
+    font-size: 30px;
+    line-height: 40px;
+    margin-top: 0;
+    margin-bottom: 17px;
+  }
+}

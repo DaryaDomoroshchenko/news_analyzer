@@ -1,0 +1,26 @@
+.statistics__path {
+  color: #B6BCBF;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  margin-top: 0;
+}
+
+@media screen and (min-width: 1440px) {
+  .statistics__path {
+    margin-bottom: 80px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .statistics__path {
+    margin-bottom: 64px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .statistics__path {
+    display: none;
+  }
+}

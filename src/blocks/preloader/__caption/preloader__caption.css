@@ -1,0 +1,29 @@
+.preloader__caption {
+  color: #B6BCBF;
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+  margin-top: 24px;
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 1440px) {
+  .preloader__caption {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .preloader__caption {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .preloader__caption {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
