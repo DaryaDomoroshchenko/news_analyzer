@@ -31,7 +31,8 @@
 @media screen and (max-width: 767px) {
   .search__input {
     height: 56px;
-    margin-bottom: 16px;
+    /* margin-bottom: 16px; */
+    margin-bottom: 35px;
     padding-left: 16px;
   }
 }
