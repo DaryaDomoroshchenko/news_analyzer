@@ -1,5 +1,5 @@
 
-# [Сервис NewsAnalyzer](https://daryadomoroshchenko.github.io/news_analyzer/)
+# [Сервис NewsAnalyzer](https://daryadomoroshchenko.github.io/news_analyzer_diploma/)
 ## Яндекс Практикум. Дипломный проект
 ### Используемые технологии:
 * JS
