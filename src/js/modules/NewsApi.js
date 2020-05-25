@@ -1,35 +1,33 @@
+import DateConverter from '../../js/utils/DateConverter.js';
+
 export default class NewsApi {
 
-  constructor(searchInput, sevenDays) {
-    this.searchInput = searchInput;
-    this.sevenDays = sevenDays;
+  constructor(URL_NEWS_API, PROXY_NEWS_API, KEY_NEWS_API, PAGE_SIZE_NEWS_API, LANGUAGE_NEWS_API) {
+    this.URL_NEWS_API = URL_NEWS_API;
+    this.PROXY_NEWS_API = PROXY_NEWS_API;
+    this.KEY_NEWS_API = KEY_NEWS_API;
+    this.PAGE_SIZE_NEWS_API = PAGE_SIZE_NEWS_API;
+    this.LANGUAGE_NEWS_API = LANGUAGE_NEWS_API;
   }
 
-  getDateWeekAgo(currentDate, days) {
-    const dateCopy = new Date(currentDate);
-    dateCopy.setDate(currentDate.getDate() - days);
-    return dateCopy;
-  }
-
-  getNews() {
-    console.log('getNews()');
-    const currentDate = new Date();
-    const dateWeekAgo = this.getDateWeekAgo(currentDate, this.sevenDays);
-    const dateTo = `${currentDate.getFullYear()}-${currentDate.getMonth() + 1}-${currentDate.getDate()}`;
-    // console.log(dateTo);
-    const dateFrom = `${dateWeekAgo.getFullYear()}-${dateWeekAgo.getMonth() + 1}-${dateWeekAgo.getDate()}`;
-    // console.log(dateFrom);
+  getNews(keyWord) {
+    const {dateFrom, dateTo} = DateConverter.getDatesForApiReq();
 
     return fetch(
-      'http://newsapi.org/v2/everything?' +
-      `q=${this.searchInput.value}&` +
-      // `q=природа&` +
+      `${this.PROXY_NEWS_API}` +
+      `${this.URL_NEWS_API}?` +
+      `q=${keyWord}&` +
       `from=${dateFrom}&` +
       `to=${dateTo}&` +
-      // 'pageSize=100&' +
-      'pageSize=25&' +
-      'sortBy=relevancy&' +
-      'apiKey=796fafb2a8354017a5435efcf2076cfa'
+      `pageSize=${this.PAGE_SIZE_NEWS_API}&` +
+      `language=${this.LANGUAGE_NEWS_API}&` +
+      `apiKey=${this.KEY_NEWS_API}`
     )
+      .then(res => {
+        if (res.ok) {
+          return res.json();
+        }
+        return Promise.reject(`Ошибка: ${res.status}`);
+      });
   };
 }

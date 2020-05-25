@@ -1,7 +1,60 @@
 import './about.css';
 import Swiper from '../../../node_modules/swiper/js/swiper';
+import SwiperParams from '../../js/utils/SwiperParams.js';
+import CommitCard from '../../js/components/CommitCard.js';
+import CommitCardList from '../../js/components/CommitCardList.js';
+import GithubApi from '../../js/modules/GithubApi.js';
+import {
+  URL_GITHUB_API,
+  COMMITS_NUMBER
+} from '../../js/constants/constants.js';
 
-var mySwiper = new Swiper ('.swiper-container', {
+const commitsContainer = document.querySelector('.commit-cardlist');
+
+const githubApi = new GithubApi(URL_GITHUB_API);
+
+const createCommitCard = (commit) => new CommitCard(commit);
+
+const commitCardList = new CommitCardList(
+  createCommitCard,
+  commitsContainer,
+  COMMITS_NUMBER
+);
+
+// Отрисовывает карточки с коммитами
+function render() {
+  githubApi.getCommits()
+    .then((result) => {
+      commitCardList.showCommits(result);
+      const swiper = new Swiper (SwiperParams.getSwiperContainer(), SwiperParams.getSwiperParams());
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+};
+
+render();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* var mySwiper = new Swiper ('.swiper-container', {
   direction: 'horizontal',
   slidesPerView: 'auto',
   centeredSlides: true,
@@ -33,4 +86,4 @@ var mySwiper = new Swiper ('.swiper-container', {
       slidesPerGroup: 1
     }
   }
-});
+}); */

@@ -1,11 +1,10 @@
-export default class NewsCard {
+import DateConverter from '../../js/utils/DateConverter.js';
 
-  constructor() {
-  }
+export default class NewsCard {
 
   createNewsCard(article) {
     const newsCard = document.createElement('a');
-    newsCard.classList.add("news-card");
+    newsCard.classList.add('news-card');
     newsCard.setAttribute('href', `${article.url}`);
     newsCard.setAttribute('target', '_blank');
 
@@ -22,24 +21,24 @@ export default class NewsCard {
       </div>`
     );
 
-    newsCard.querySelector(".news-card__background-image").style.backgroundImage = `url(${article.urlToImage})`;
-    newsCard.querySelector(".news-card__title").textContent = article.title;
-    newsCard.querySelector(".news-card__text").textContent = article.description;
-    newsCard.querySelector(".news-card__source").textContent = article.source.name;
+    newsCard.querySelector('.news-card__background-image').style.backgroundImage = `url(${article.urlToImage})`;
+    newsCard.querySelector('.news-card__title').textContent = article.title;
+    newsCard.querySelector('.news-card__source').textContent = article.source.name;
 
-    const initialDate = article.publishedAt;
-    const date = new Date(`${initialDate}`);
-    const fullDate = date.toLocaleString('ru', {
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric',
-    });
-    // console.log(fullDate);
-    const dateArray = fullDate.split(' ');
-    // console.log(dateArray);
-    const correctDate = `${dateArray[0]} ${dateArray[1]}, ${dateArray[2]}`;
-    // console.log(correctDate);
-    newsCard.querySelector(".news-card__date").textContent = correctDate;
+    const dateToConvert = article.publishedAt;
+    const newsDate = DateConverter.сardDateConverter(dateToConvert);
+    newsCard.querySelector('.news-card__date').textContent = newsDate;
+
+    const regex = new RegExp('(<[\/a-z0-9]+>)|(https?:\/\/[^\s]+\.[a-z]{2,}(\.[a-z]{2,})?)', 'gi');
+
+    if (article.description !== null) {
+      let validatedDescription = article.description.replace(regex, '');
+      newsCard.querySelector('.news-card__text').textContent = validatedDescription;
+    }
+    else {
+      let validatedDescription = article.description;
+      newsCard.querySelector('.news-card__text').textContent = validatedDescription;
+    }
 
     return newsCard;
   }
