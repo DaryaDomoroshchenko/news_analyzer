@@ -9,11 +9,12 @@
   display: -webkit-box;
   -webkit-box-orient: vertical;
   overflow-y: hidden;
+  word-wrap: break-word;
 }
 
 @media screen and (min-width: 1440px) {
   .news-card__text {
-    -webkit-line-clamp: 5;
+    -webkit-line-clamp: 4;
   }
 }
 

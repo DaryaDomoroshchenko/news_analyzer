@@ -14,6 +14,11 @@
   box-sizing: border-box;
 }
 
+.commit-card:hover {
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, .2);
+  transition: box-shadow .3s ease-out;
+}
+
 @media screen and (min-width: 1440px) {
   .commit-card {
     width: 400px;

@@ -14,7 +14,9 @@
 
 .results__button:hover {
   opacity: .9;
-  transition: opacity .4s ease-out;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, .2);
+  transition: opacity .3s ease-out;
+  transition: box-shadow .3s ease-out;
 }
 
 @media screen and (min-width: 1440px) {

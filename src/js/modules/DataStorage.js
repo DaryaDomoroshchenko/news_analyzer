@@ -1,13 +1,18 @@
 export default class DataStorage {
 
-  constructor() {
-
+  createDataStorage(result, request) {
+    localStorage.setItem('news', JSON.stringify(result));
+    localStorage.setItem('keyWord', JSON.stringify(request));
   }
 
- /*  createDataStorage() {
-    let newsArray = [];
-    localStorage.setItem('news', JSON.stringify(newsArray));
-    const news = JSON.parse(localStorage.getItem('news'));
-  } */
+  getDataFromStorage() {
+    let news = localStorage.getItem('news');
+    return JSON.parse(news);
+  }
+
+  getkeyWordFromStorage() {
+    let keyWord = localStorage.getItem('keyWord');
+    return JSON.parse(keyWord);
+  }
 
 }

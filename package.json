@@ -1,6 +1,6 @@
 {
   "name": "news_analyzer",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Дипломный проект News Analyzer",
   "homepage": "https://daryadomoroshchenko.github.io/news_analyzer/",
   "main": "./src/pages/index/index.js",

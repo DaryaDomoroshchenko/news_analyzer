@@ -5,6 +5,7 @@
 @import url(../../blocks/footer/footer.css);
 @import url(../../blocks/preloader/preloader.css);
 @import url(../../blocks/not-found/not-found.css);
+@import url(../../blocks/error/error.css);
 @import url(../../blocks/cardlist/cardlist.css);
 @import url(../../blocks/news-card/news-card.css);
 @import url(../../blocks/for-clients/for-clients.css);
@@ -17,6 +18,7 @@
 @import url(../../blocks/statistics/statistics.css);
 @import url(../../blocks/diagram/diagram.css);
 @import url(./__paddings/root__paddings.css);
+@import url(./__hide/root__hide.css);
 @import url(../hover-opacity/hover-opacity.css);
 
 .root {

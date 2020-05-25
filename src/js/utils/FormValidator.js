@@ -1,31 +1,13 @@
 export default class FormValidator {
 
-  constructor(searchForm, searchInput) {
+  constructor(searchForm, searchInput, searchButton) {
     this.searchForm = searchForm;
     this.searchInput = searchInput;
-    this.searchButton = searchForm.querySelector('.search__button');
+    this.searchButton = searchButton;
   }
-
-  // Показывает ошибку, если кнопка нажата при пустом поле
-  /* showError() {
-    console.log('showError()');
-
-    event.preventDefault();
-    this.searchButton.setAttribute('disabled', true);
-
-    const error = this.searchForm.querySelector(".search__error-message");
-
-    if (this.searchInput.validity.valueMissing) {
-      this.searchInput.setCustomValidity('Нужно ввести ключевое слово');
-    }
-
-    error.textContent = this.searchInput.validationMessage;
-  } */
 
   // Валидация поля ввода
   checkInputValidity() {
-    // console.log('checkInputValidity()');
-
     const error = this.searchForm.querySelector(".search__error-message");
 
     if (this.searchInput.validity.valueMissing) {
@@ -46,8 +28,6 @@ export default class FormValidator {
 
   // Делает кнопку сабмита активной и неактивной
   setSubmitButtonState() {
-    // console.log('setSubmitButtonState()');
-
     if (!this.searchForm.checkValidity()) {
       this.searchButton.setAttribute('disabled', true);
 
@@ -58,15 +38,21 @@ export default class FormValidator {
 
   // Добавляет обработчики
   setEventListeners() {
-    // console.log('setEventListeners()');
-
     this.searchInput.addEventListener('input', this.checkInputValidity.bind(this));
 
     this.searchForm.addEventListener('input', () => {
       this.checkInputValidity(event.target);
       this.setSubmitButtonState(event.target)
     });
+  }
 
-    // this.searchButton.addEventListener('click', this.showError.bind(this));
+  makeFormDisabled() {
+    this.searchInput.setAttribute('disabled', true);
+    this.searchButton.setAttribute('disabled', true);
+  }
+
+  makeFormActive() {
+    this.searchInput.removeAttribute('disabled');
+    this.searchButton.removeAttribute('disabled');
   }
 };
