@@ -8,7 +8,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="./images/favicon.ico">
-  <link rel="stylesheet" href="index.4a99debfddb27d40d213.css">
+  <link rel="stylesheet" href="index.0d20e39c32a2ed5b9f03.css">
   <title>NewsAnalyzer - Главная</title>
 
 </head>
@@ -18,14 +18,19 @@
   <section class="search">
 
     <header class="header">
-      <a class="header__logo header__logo_white hover-opacity" href="./index.html">NewsAnalyzer</a>
-      <nav class="header__menu">
-        <a class="header__link header__link_selected-white" href="./index.html">Главная</a>
-        <a class="header__link header__link_unselected-white" href="./about.html">О проекте</a>
-      </nav>
+
+      <div class="header__general-container root__container">
+        <a class="header__logo header__logo_white hover-opacity" href="./index.html">NewsAnalyzer</a>
+        <nav class="header__menu">
+          <a class="header__link header__link_selected-white" href="./index.html">Главная</a>
+          <a class="header__link header__link_unselected-white" href="./about.html">О проекте</a>
+        </nav>
+      </div>
+
     </header>
 
-    <div class="search__content root__paddings">
+    <div class="search__content">
+
       <div class="search__content-container">
         <h1 class="search__header">Что в&nbsp;мире творится?</h1>
         <p class="search__caption">Введите в&nbsp;поиске любую тему и&nbsp;узнайте, насколько популярной она&nbsp;была в новостях за&nbsp;прошедшую неделю.</p>
@@ -35,6 +40,7 @@
           <span class="search__error-message"></span>
         </form>
       </div>
+
     </div>
 
   </section>
@@ -61,55 +67,63 @@
 
   </section>
 
-  <section class="results root__paddings root__hide">
+  <section class="results root__hide">
 
-    <div class="results__container">
-      <h2 class="results__title">Результаты поиска</h2>
-      <a class="results__analytics-link hover-opacity" href="./analytics.html">
-        Посмотреть аналитику&nbsp;&nbsp;<img class="results__arrow-image" src="./images/arrow.png" alt="Arrow">
-      </a>
+    <div class="results__general-container root__paddings root__container">
+      <div class="results__container">
+        <h2 class="results__title">Результаты поиска</h2>
+        <a class="results__analytics-link hover-opacity" href="./analytics.html">
+          Посмотреть аналитику&nbsp;&nbsp;<img class="results__arrow-image" src="./images/arrow.png" alt="Arrow">
+        </a>
+      </div>
+
+      <div class="cardlist"></div>
+
+      <button class="results__button">Показать еще</button>
     </div>
-
-    <div class="cardlist"></div>
-
-    <button class="results__button">Показать еще</button>
 
   </section>
 
-  <section class="about-author root__paddings">
-    <div class="about-author__image-wrap">
-      <img class="about-author__image" src="./images/myphoto.jpg" alt="Author`s photo">
+  <section class="about-author">
+
+    <div class="about-author__general-container root__paddings root__container">
+      <div class="about-author__image-wrap">
+        <img class="about-author__image" src="./images/myphoto.jpg" alt="Author`s photo">
+      </div>
+
+      <div class="about-author__container">
+        <h2 class="about-author__title">Об авторе</h2>
+        <p class="about-author__text">Здравствуйте, Меня зовут Дарья Доморощенко, и&nbsp;я&nbsp;являюсь Junior фронтенд-разработчиком. Прошла обучение в&nbsp;сервисе онлайн-образования Яндекс.Практикум. Изучила HTML, CSS, JavaScript, а&nbsp;также работу с&nbsp;Git и&nbsp;Webpack.</p>
+        <p class="about-author__text">Буду рада любой обратной связи :)</p>
+      </div>
     </div>
 
-    <div class="about-author__container">
-      <h2 class="about-author__title">Об авторе</h2>
-      <p class="about-author__text">Здравствуйте, Меня зовут Дарья Доморощенко, и&nbsp;я&nbsp;являюсь Junior фронтенд-разработчиком. Прошла обучение в&nbsp;сервисе онлайн-образования Яндекс.Практикум. Изучила HTML, CSS, JavaScript, а&nbsp;также работу с&nbsp;Git и&nbsp;Webpack.</p>
-      <p class="about-author__text">Буду рада любой обратной связи :)</p>
-    </div>
   </section>
 
   <footer class="footer">
 
+    <div class="footer__general-container root__container">
       <ul class="footer__menu">
         <li class="footer__li"><a class="footer__menu-link hover-opacity" href="./index.html">Главная</a></li>
         <li class="footer__li"><a class="footer__menu-link hover-opacity" href="./about.html">О проекте</a></li>
         <li class="footer__li"><a class="footer__menu-link hover-opacity" href="https://praktikum.yandex.ru/web/" target="_blank">Яндекс.Практикум</a></li>
       </ul>
 
-    <div class="footer__icons-container">
-      <a class="footer__icon-link hover-opacity" href="https://github.com/DaryaDomoroshchenko" target="_blank">
-        <img class="footer__social-icon" src="./images/github.svg" alt="GitHub">
-      </a>
-      <a class="footer__icon-link hover-opacity" href="https://ru-ru.facebook.com/" target="_blank">
-        <img class="footer__social-icon" src="./images/facebook.svg" alt="Facebook">
-      </a>
-    </div>
+      <div class="footer__icons-container">
+        <a class="footer__icon-link hover-opacity" href="https://github.com/DaryaDomoroshchenko" target="_blank">
+          <img class="footer__social-icon" src="./images/github.svg" alt="GitHub">
+        </a>
+        <a class="footer__icon-link hover-opacity" href="https://ru-ru.facebook.com/" target="_blank">
+          <img class="footer__social-icon" src="./images/facebook.svg" alt="Facebook">
+        </a>
+      </div>
 
-    <p class="footer__copyright">&copy; 2020  Дарья Доморощенко</p>
+      <p class="footer__copyright">&copy; 2020  Дарья Доморощенко</p>
+    </div>
 
   </footer>
 
-  <script src="index.67b3313809c21beef363.js"></script>
+  <script src="index.4908e042012254813778.js"></script>
 
 </body>
 </html>
