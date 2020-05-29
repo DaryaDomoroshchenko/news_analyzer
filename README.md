@@ -1,5 +1,5 @@
 
-# [Сервис NewsAnalyzer](https://daryadomoroshchenko.github.io/news_analyzer/)
+# [Сервис NewsAnalyzer](https://daryadomoroshchenko.github.io/news_analyzer_diploma/)
 ## Яндекс Практикум. Дипломный проект
 ### Используемые технологии:
 * JS
@@ -12,4 +12,4 @@
 2. `npm i` - установить все необходимые зависимости проекта
 3. `npm run build` - произвести сборку проекта
 4. `npm run dev` - запустить локальный сервер
-#### Актуальная версия v0.0.5
+#### Актуальная версия v0.0.7

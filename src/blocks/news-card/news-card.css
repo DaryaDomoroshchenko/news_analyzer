@@ -10,7 +10,13 @@
   font-family: 'Roboto', Arial, sans-serif;
   background: #FFF;
   border-radius: 8px;
+  text-decoration: none;
   cursor: pointer;
+}
+
+.news-card:hover {
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, .2);
+  transition: box-shadow .4s ease-out;
 }
 
 @media screen and (min-width: 1440px) {
@@ -26,6 +32,13 @@
     height: 570px;
   }
 }
+
+/* @media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .news-card {
+    width: 309px;
+    height: 447px;
+  }
+} */
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .news-card {

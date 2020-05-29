@@ -1,3 +1,2 @@
-.statistics__bold {
-  font-weight: bold;
-}
+@import url(./_total/statistics__bold_total.css);
+@import url(./_mentions/statistics__bold_mentions.css);
