@@ -33,11 +33,11 @@ const groupedArticles = analyticsHandler.countPercentageOfMentions();
 // Рисует диаграмму
 function render() {
   for (let i = 0; i < DAYS_AGO_NUMBER; i++) {
-    for (let j = 0; j < groupedArticles.length; j++) {
+    for (let articlesGroup of groupedArticles) {
 
-      if ((datesArr[i] === groupedArticles[j].publishedAt) && (groupedArticles[j].mentions !== 0)) {
-        let diagramRowElem = createDiagramRow(datesArr[i], groupedArticles[j].percentageOfMentions);
-        let diagramRow = diagramRowElem.createDiagramRow(datesArr[i], groupedArticles[j].percentageOfMentions);
+      if ((datesArr[i] === articlesGroup.publishedAt) && (articlesGroup.mentions !== 0)) {
+        const diagramRowElem = createDiagramRow(datesArr[i], articlesGroup.percentageOfMentions);
+        const diagramRow = diagramRowElem.createDiagramRow(datesArr[i], articlesGroup.percentageOfMentions);
         rowsContainer.appendChild(diagramRow);
       }
     }

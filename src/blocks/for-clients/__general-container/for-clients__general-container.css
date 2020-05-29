@@ -1,0 +1,21 @@
+.for-clients__general-container {
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 1440px) {
+  .for-clients__general-container {
+    padding: 80px 0 94px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .for-clients__general-container {
+    padding: 30px 0 55px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .for-clients__general-container {
+    padding: 16.5px 0 30px;
+  }
+}

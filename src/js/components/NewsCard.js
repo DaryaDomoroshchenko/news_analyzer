@@ -32,11 +32,11 @@ export default class NewsCard {
     const regex = new RegExp('(<[\/a-z0-9]+>)|(https?:\/\/[^\s]+\.[a-z]{2,}(\.[a-z]{2,})?)', 'gi');
 
     if (article.description !== null) {
-      let validatedDescription = article.description.replace(regex, '');
+      const validatedDescription = article.description.replace(regex, '');
       newsCard.querySelector('.news-card__text').textContent = validatedDescription;
     }
     else {
-      let validatedDescription = article.description;
+      const validatedDescription = article.description;
       newsCard.querySelector('.news-card__text').textContent = validatedDescription;
     }
 

@@ -4,12 +4,11 @@ export default class FormValidator {
     this.searchForm = searchForm;
     this.searchInput = searchInput;
     this.searchButton = searchButton;
+    this.error = this.searchForm.querySelector('.search__error-message');
   }
 
   // Валидация поля ввода
   checkInputValidity() {
-    const error = this.searchForm.querySelector(".search__error-message");
-
     if (this.searchInput.validity.valueMissing) {
       this.searchInput.setCustomValidity('Нужно ввести ключевое слово');
 
@@ -23,7 +22,7 @@ export default class FormValidator {
       this.searchInput.setCustomValidity('');
     }
 
-    error.textContent = this.searchInput.validationMessage;
+    this.error.textContent = this.searchInput.validationMessage;
   }
 
   // Делает кнопку сабмита активной и неактивной

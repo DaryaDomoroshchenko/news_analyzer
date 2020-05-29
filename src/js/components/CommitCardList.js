@@ -11,16 +11,16 @@ export default class CommitCardList {
 
     if (commits.length >= this.COMMITS_NUMBER) {
       for (let i = 0; i < this.COMMITS_NUMBER; i++) {
-        let commitCardElem = this.createCommitCard(commits[i]);
-        let commitCard = commitCardElem.createCommitCard(commits[i]);
+        const commitCardElem = this.createCommitCard(commits[i]);
+        const commitCard = commitCardElem.createCommitCard(commits[i]);
         this.addCommitCard(commitCard);
       }
     }
 
     else {
-      for (let i = 0; i < commits.length; i++) {
-        let commitCardElem = this.createCommitCard(commits[i]);
-        let commitCard = commitCardElem.createCommitCard(commits[i]);
+      for (let commit of commits) {
+        const commitCardElem = this.createCommitCard(commit);
+        const commitCard = commitCardElem.createCommitCard(commit);
         this.addCommitCard(commitCard);
       }
     }

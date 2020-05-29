@@ -3,29 +3,9 @@
 @import url(./__title/statistics__title.css);
 @import url(./__numbers/statistics__numbers.css);
 @import url(./__bold/statistics__bold.css);
+@import url(./__general-container/statistics__general-container.css);
 
 .statistics {
   font-family: 'Roboto', Arial, sans-serif;
   color: #1A1B22;
-}
-
-@media screen and (min-width: 1440px) {
-  .statistics {
-    padding-top: 40px;
-    padding-bottom: 80px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1439px) {
-  .statistics {
-    padding-top: 32px;
-    padding-bottom: 40px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .statistics {
-    padding-top: 16px;
-    padding-bottom: 24px;
-  }
 }

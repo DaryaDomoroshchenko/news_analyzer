@@ -22,8 +22,8 @@ export default class NewsCardList {
 
     for (let i = 0; i < this.ADDED_NEWS_NUMBER; i++) {
 
-      let newsCardElem = this.createNewsCard(articles[i]);
-      let newsCard = newsCardElem.createNewsCard(articles[i]);
+      const newsCardElem = this.createNewsCard(articles[i]);
+      const newsCard = newsCardElem.createNewsCard(articles[i]);
 
       this.addNewsCard(newsCard);
       this._newsCounter++;
@@ -46,8 +46,8 @@ export default class NewsCardList {
         break;
       };
 
-      let newsCardElem = this.createNewsCard(articlesFromStorage[i]);
-      let newsCard = newsCardElem.createNewsCard(articlesFromStorage[i]);
+      const newsCardElem = this.createNewsCard(articlesFromStorage[i]);
+      const newsCard = newsCardElem.createNewsCard(articlesFromStorage[i]);
 
       this.addNewsCard(newsCard);
       this._newsCounter++;

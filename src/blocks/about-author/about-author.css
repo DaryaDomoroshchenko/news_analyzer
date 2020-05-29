@@ -3,28 +3,9 @@
 @import url(./__container/about-author__container.css);
 @import url(./__title/about-author__title.css);
 @import url(./__text/about-author__text.css);
+@import url(./__general-container/about-author__general-container.css);
 
 .about-author {
   font-family: 'Roboto', Arial, sans-serif;
-  display: flex;
   color: #1A1B22;
-}
-
-@media screen and (min-width: 1440px) {
-  .about-author {
-    padding: 80px 0;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1439px) {
-  .about-author {
-    padding: 40px 0;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .about-author {
-    flex-direction: column;
-    padding: 18px 0;
-  }
 }

@@ -6,12 +6,12 @@ export default class DataStorage {
   }
 
   getDataFromStorage() {
-    let news = localStorage.getItem('news');
+    const news = localStorage.getItem('news');
     return JSON.parse(news);
   }
 
   getkeyWordFromStorage() {
-    let keyWord = localStorage.getItem('keyWord');
+    const keyWord = localStorage.getItem('keyWord');
     return JSON.parse(keyWord);
   }
 

@@ -19,11 +19,12 @@
 @import url(../../blocks/diagram/diagram.css);
 @import url(./__paddings/root__paddings.css);
 @import url(./__hide/root__hide.css);
+@import url(./__container/root__container.css);
 @import url(../hover-opacity/hover-opacity.css);
 
 .root {
-  font-family: 'Roboto', Arial, sans-serif;
-  min-width: 320px;
+/* font-family: 'Roboto', Arial, sans-serif; */
+/*   min-width: 320px;
   max-width: 1440px;
-  margin: 0 auto;
+  margin: 0 auto; */
 }
