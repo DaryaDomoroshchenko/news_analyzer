@@ -1,0 +1,21 @@
+.diagram__general-container {
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 1440px) {
+  .diagram__general-container {
+    padding: 80px 0 89px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .diagram__general-container {
+    padding: 40px 0 48px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .diagram__general-container {
+    padding: 24px 0 23px;
+  }
+}

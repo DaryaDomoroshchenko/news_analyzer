@@ -16,74 +16,84 @@
 <body class="root">
 
   <header class="header">
-    <a class="header__logo header__logo_black hover-opacity" href="./index.html">NewsAnalyzer</a>
-    <nav class="header__menu">
-      <a class="header__link header__link_unselected-black" href="./index.html">Главная</a>
-      <a class="header__link header__link_unselected-black" href="./about.html">О проекте</a>
-    </nav>
+
+    <div class="header__general-container root__container">
+      <a class="header__logo header__logo_black hover-opacity" href="./index.html">NewsAnalyzer</a>
+      <nav class="header__menu">
+        <a class="header__link header__link_unselected-black" href="./index.html">Главная</a>
+        <a class="header__link header__link_unselected-black" href="./about.html">О проекте</a>
+      </nav>
+    </div>
+
   </header>
 
-  <section class="statistics root__paddings">
+  <section class="statistics">
 
-    <p class="statistics__path">
-      <a class="statistics__link" href="./index.html">Главная</a> / Аналитика
-    </p>
-    <h2 class="statistics__title"></h2>
-    <p class="statistics__numbers statistics__numbers">Новостей за неделю: <span class="statistics__bold_total"></span></p>
-    <p class="statistics__numbers statistics__numbers">Упоминаний в загаловках: <span class="statistics__bold_mentions"></span></p>
+    <div class="statistics__general-container root__paddings root__container">
+      <p class="statistics__path">
+        <a class="statistics__link" href="./index.html">Главная</a> / Аналитика
+      </p>
+      <h2 class="statistics__title"></h2>
+      <p class="statistics__numbers statistics__numbers">Новостей за неделю: <span class="statistics__bold_total"></span></p>
+      <p class="statistics__numbers statistics__numbers">Упоминаний в загаловках: <span class="statistics__bold_mentions"></span></p>
+    </div>
 
   </section>
 
-  <section class="diagram root__paddings">
+  <section class="diagram">
 
-    <h3 class="diagram__title">Аналитика по дням</h3>
+    <div class="diagram__general-container root__paddings root__container">
+      <h3 class="diagram__title">Аналитика по дням</h3>
 
-    <div class="diagram__info-container">
-      <div class="diagram__date-container">
-        <p class="diagram__date">Дата</p>
-        <p class="diagram__month"></p>
+      <div class="diagram__info-container">
+        <div class="diagram__date-container">
+          <p class="diagram__date">Дата</p>
+          <p class="diagram__month"></p>
+        </div>
+        <p class="diagram__mentions">Кол-во упоминаний, %</p>
       </div>
-      <p class="diagram__mentions">Кол-во упоминаний, %</p>
-    </div>
 
-    <div class="diagram__scale-container">
-      <p class="diagram__scale-point">0</p>
-      <p class="diagram__scale-point">25</p>
-      <p class="diagram__scale-point">50</p>
-      <p class="diagram__scale-point">75</p>
-      <p class="diagram__scale-point">100</p>
-    </div>
+      <div class="diagram__scale-container">
+        <p class="diagram__scale-point">0</p>
+        <p class="diagram__scale-point">25</p>
+        <p class="diagram__scale-point">50</p>
+        <p class="diagram__scale-point">75</p>
+        <p class="diagram__scale-point">100</p>
+      </div>
 
-    <div class="diagram__rows-container"></div>
+      <div class="diagram__rows-container"></div>
 
-    <div class="diagram__scale-container">
-      <p class="diagram__scale-point">0</p>
-      <p class="diagram__scale-point">25</p>
-      <p class="diagram__scale-point">50</p>
-      <p class="diagram__scale-point">75</p>
-      <p class="diagram__scale-point">100</p>
+      <div class="diagram__scale-container">
+        <p class="diagram__scale-point">0</p>
+        <p class="diagram__scale-point">25</p>
+        <p class="diagram__scale-point">50</p>
+        <p class="diagram__scale-point">75</p>
+        <p class="diagram__scale-point">100</p>
+      </div>
     </div>
 
   </section>
 
   <footer class="footer">
 
-    <ul class="footer__menu">
-      <li class="footer__li"><a class="footer__menu-link hover-opacity" href="./index.html">Главная</a></li>
-      <li class="footer__li"><a class="footer__menu-link hover-opacity" href="./about.html">О проекте</a></li>
-      <li class="footer__li"><a class="footer__menu-link hover-opacity" href="https://praktikum.yandex.ru/web/" target="_blank">Яндекс.Практикум</a></li>
-    </ul>
+    <div class="footer__general-container root__container">
+      <ul class="footer__menu">
+        <li class="footer__li"><a class="footer__menu-link hover-opacity" href="./index.html">Главная</a></li>
+        <li class="footer__li"><a class="footer__menu-link hover-opacity" href="./about.html">О проекте</a></li>
+        <li class="footer__li"><a class="footer__menu-link hover-opacity" href="https://praktikum.yandex.ru/web/" target="_blank">Яндекс.Практикум</a></li>
+      </ul>
 
-    <div class="footer__icons-container">
-      <a class="footer__icon-link hover-opacity" href="https://github.com/DaryaDomoroshchenko" target="_blank">
-        <img class="footer__social-icon" src="<%=require('../../images/github.svg').default%>" alt="GitHub">
-      </a>
-      <a class="footer__icon-link hover-opacity" href="https://ru-ru.facebook.com/" target="_blank">
-        <img class="footer__social-icon" src="<%=require('../../images/facebook.svg').default%>" alt="Facebook">
-      </a>
+      <div class="footer__icons-container">
+        <a class="footer__icon-link hover-opacity" href="https://github.com/DaryaDomoroshchenko" target="_blank">
+          <img class="footer__social-icon" src="<%=require('../../images/github.svg').default%>" alt="GitHub">
+        </a>
+        <a class="footer__icon-link hover-opacity" href="https://ru-ru.facebook.com/" target="_blank">
+          <img class="footer__social-icon" src="<%=require('../../images/facebook.svg').default%>" alt="Facebook">
+        </a>
+      </div>
+
+      <p class="footer__copyright">&copy; 2020  Дарья Доморощенко</p>
     </div>
-
-    <p class="footer__copyright">&copy; 2020  Дарья Доморощенко</p>
 
   </footer>
 

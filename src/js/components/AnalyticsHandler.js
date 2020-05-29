@@ -48,7 +48,7 @@ export default class AnalyticsHandler {
     const regex = new RegExp(keyWord, 'gi');
 
     groupedArticles.forEach((group) => {
-      let concatedText = group.text.reduce((prevArt, art) => {
+      const concatedText = group.text.reduce((prevArt, art) => {
         return prevArt.concat(art);
       });
       const result = concatedText.match(regex) || [];
@@ -63,10 +63,10 @@ export default class AnalyticsHandler {
   groupNews() {
     const news = this.dataStorage.getDataFromStorage();
     const articlesArr = news.articles;
-    let groups = [];
+    const groups = [];
 
     for (let article of articlesArr) {
-      let existingGroups = groups.filter((group) =>
+      const existingGroups = groups.filter((group) =>
         DateConverter.convertDateForComparison(group.publishedAt) ===
           DateConverter.convertDateForComparison(article.publishedAt));
 
@@ -74,7 +74,7 @@ export default class AnalyticsHandler {
         existingGroups[0].text.push(article.title, article.description);
       }
       else {
-        let newGroup = {
+        const newGroup = {
           publishedAt: article.publishedAt,
           text: [article.title, article.description]
         };
@@ -98,13 +98,13 @@ export default class AnalyticsHandler {
     let totalMentions = 0;
     const groupedArticles = this.countMentions();
 
-    for (let i = 0; i < groupedArticles.length; i++) {
-      totalMentions += groupedArticles[i].mentions;
+    for (let articlesGroup of groupedArticles) {
+      totalMentions += articlesGroup.mentions;
     }
 
-    for (let i = 0; i < groupedArticles.length; i++) {
-      let percentageOfMentions = groupedArticles[i].mentions * this.HUNDRED_PERCENT / totalMentions;
-      groupedArticles[i].percentageOfMentions = Math.round(percentageOfMentions);
+    for (let articlesGroup of groupedArticles) {
+      const percentageOfMentions = articlesGroup.mentions * this.HUNDRED_PERCENT / totalMentions;
+      articlesGroup.percentageOfMentions = Math.round(percentageOfMentions);
     }
 
     return groupedArticles;
