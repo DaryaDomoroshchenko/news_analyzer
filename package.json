@@ -1,6 +1,6 @@
 {
   "name": "news_analyzer_diploma",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Дипломный проект News Analyzer",
   "homepage": "https://daryadomoroshchenko.github.io/news_analyzer_diploma/",
   "main": "./src/pages/index/index.js",
