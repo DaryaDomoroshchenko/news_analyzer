@@ -1,4 +1,4 @@
-const URL_NEWS_API = 'https://newsapi.org/v2/everything';
+const URL_NEWS_API = 'https://praktikum.tk/news/v2/everything';
 const PROXY_NEWS_API = 'https://cors-anywhere.herokuapp.com/';
 const KEY_NEWS_API = '796fafb2a8354017a5435efcf2076cfa';
 const PAGE_SIZE_NEWS_API = 100;
